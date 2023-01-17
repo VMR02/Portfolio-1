@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.nav-container{
+    background: #7DF0E3;
+}
+ #text2, #text3, #text4{
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+#text1{
+    color: #EDA98A;
+    font-weight: bold;
+}
+#flex1{
+    display: flex;
+}
+#text2, #text3, #text4{
+    display: block;
+    padding: 0 .5em;
+}
+.social-header, .hero-design{
+    display: none;
+}
+.hero{
+    background: #A1EDE5;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+#meet{
+    font-weight: bold;
+}
+.scroll{
+    width: 30px;
+    margin-top: 2em;
+}
+section{
+    padding: 4em 2em;
+    text-align: center;
+}
+.featured{
+    position: relative;
+}
+.featured::before{
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #F0F0B1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle1{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #D3B9ED;
+        letter-spacing: .2em;
+        font-size: .85em
+}
+.subtitle{
+    color: black;
+  
+    font-size: .85em
+}
+.featured-title{
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: -.4em;
+    display: block;
+}
+.featured-desc{
+    margin-bottom: 3em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+.skills{
+    background: #D3B9ED;
+}
+.transition2, .transition3, .transition4{
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.icon-container1, .icon-container2, .icon-container3{
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+}
+.skill-title{
+    font-weight: bold;
+}
+#photo{
+    margin-bottom: 2em;
+}
+
+footer{
+    background: #7DF0E3;
+    
+    height: 6vh;
+    padding-top: 2em;
+    padding-left: 4em;
+}
+
+@media only screen and (min-width: 800px){
+
+    .featured, .portfolio{
+        text-align: left;
+    }
+    .featured, .portfolio-container-transition3, .portfolio-container-transition4, .portfolio-container-transition5{
+    display: grid;
+    grid-template-columns: 40% auto;
+    }
+    .left, .portfolio-left{
+        display: grid;
+        place-content: center;
+    }
+    .right{
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+   .skills{
+       margin-top: -5em;
+       padding-top: 7em;
+      
+   }
+   .skills-container ul{
+       display: grid;
+       grid-template-columns: repeat(3, auto);
+       grid-gap: 1em;
+   }
+  .portfolio img{
+      margin-left: 2em;
+  }
+}    
+
+@media only screen and (min-width: 1050px){
+    
+    .nav-container{
+        display: grid;
+        grid-template-columns: 66% auto;
+      background: unset;
+ }
+
+ #semi{
+     background: #7DF0E3;
+ }
+ .header{
+     padding: 2em 2em 2em 4em;
+
+ }
+ .social-header{
+     padding: 2em 4em 2em 0;
+ }
+    section{
+        padding: 4em;
+    }
+    .social-header{
+        display: block;
+    }
+
+    #social{
+        display: flex;
+        justify-content: space-between;
+        width: 7em;
+        float: right;
+    }
+    #social1{
+        width:20px;
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+    }
+
+    .content{
+        background: #A1EDE5;
+        padding: 6em 8em 6em 4em;
+        text-align: left;
+    }
+
+    #text{
+        font-size: 3em;
+        line-height: 1.2em;
+    }
+    .meet{
+        margin: unset;
+    }
+    .hero-design{
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+ 
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
